@@ -1,0 +1,25 @@
+.box {
+  /*Sets the height and width of the section, this is how you do a comment in css */
+  width: 200px;
+  height: 200px
+}
+
+.box-blue {
+  /* Sets font color */
+  color: white;
+  /* Sets background color */
+  background-color: #0000ff;
+}
+
+.box-orange {
+  /* Uses hex codes to define color */
+  color: #0000ff;
+  background-color: #ffa500;
+}
+
+#box-yellow {
+  /* Uses predefined colors to define color */
+  /* ALWAYS REMEMBER . IS FOR CLASS AND # IS FOR ID*/
+  color: purple;
+  background-color: yellow;
+};

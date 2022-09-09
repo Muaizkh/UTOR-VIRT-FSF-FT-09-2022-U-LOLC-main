@@ -1,0 +1,47 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+body {
+    position: relative;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    background-color: bisque;
+    color: #4f4846;
+}
+header{
+    text-align:right;
+    position:fixed;
+    right: 0;
+    background-color: purple;
+    color: brown;
+}
+.list-1 {
+    list-style-type: none;
+}
+.l1 {
+    display: inline;
+}
+.l2 {
+    display:inline;
+}
+.l3 {
+    display: inline;
+}
+
+.section2 {
+    text-align: center;
+    background-color: blueviolet;
+}
+footer {
+    background-color: green;
+}
+img {
+    width: 200px;
+    height: 200px;
+
+
+    display: inline;
+}
+#contact-form {
+    background-color: blue;
+}
