@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: auto;
+}
+
+body {
+    background-color:darkmagenta;
+    padding: 25px;
+}
+header{
+    font-family: 'Times New Roman', Times, serif;
+    background-color:crimson;
+    color: black;
+}
+header nav {
+    padding-top: 20px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+h1 {
+    display: subgrid;
+}
+span{
+    color: bisque;
+}
+header nav ul{
+    list-style: none;
+}
+header nav ul li {
+    display: inline-block;
+    margin-left: 35px;
+
+}
+.figure-image {
+    display: inline-block;
+    /* height: 450px;
+    width: 100%;
+    margin-bottom: 20px; */
+    /* background-image: url("../images/HTML_Blog-scaled.jpeg.webp"); */
+    /* background-size: cover;
+    background-position: center; */
+}
+.logo-image {
+    width: 100%;
+}
+#About-me {
+    width: 70%;
+    display: inline-block;
+    }
+.float-image{
+    height: 200px;
+    width: 250px;
+}
+#About-Projects-Contact {
+justify-content:center;
+}

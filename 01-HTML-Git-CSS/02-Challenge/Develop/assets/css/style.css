@@ -41,7 +41,7 @@ header nav ul {
 /*removed . to get it to work*/
 header nav ul li {
     display: inline-block;
-    margin-left: 25px;
+    margin-left: 25displpx;
 }
 
 a {
