@@ -12,8 +12,11 @@ img {
   width: 200px;
   height: 200px;
   background-color: lightblue;
+  /* added margin property */
   margin: 27px;
+  /* added padding property */
   padding: 10px 10px;
+  /* added border property */
   border: 10px solid darkblue;
   /* TODO: Add a margin property */
   /* TODO: Add a padding property */

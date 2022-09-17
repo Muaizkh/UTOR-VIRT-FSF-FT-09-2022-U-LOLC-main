@@ -14,16 +14,23 @@ ul {
 }
 
 /* List items in navigation bar */
+/* this would refer to all items in the list and as they are  */
 li {
   /* TODO: Add your code here */
+  /* The CSS list-style-type property defines the appearance of a list item element.*/
+  /* The CSS list-style-position property defines the position of a list item marker in the principal block box. */
+  /* The CSS list-style-image property defines the image to use as the list item marker, which is the image that appears before each list item. */
   list-style-type: none;
   font-size: 40px;
+  /* The display CSS property sets whether an element is treated as a block or inline element and the layout used for its children, such as flow layout, grid or flex. Formally, the display property sets an element's inner and outer display types. */
   display:inline;
 }
 
 /* Boxes */
 img {
   /* TODO: Add your code here */
+  /* margin being 0 allows for the img's and boxes to have no space as indicated in the  */
+  /* the display would be in block form (inline and stacked */
   margin: 0 auto;
   display: block;
 }
@@ -40,6 +47,7 @@ img {
   background-color: #999900;
 }
 
+/* changed from box 3 to the actual class name of image-3 */
 /* Box 3 */
 #image-3 {
 /* TODO: Add your code here */

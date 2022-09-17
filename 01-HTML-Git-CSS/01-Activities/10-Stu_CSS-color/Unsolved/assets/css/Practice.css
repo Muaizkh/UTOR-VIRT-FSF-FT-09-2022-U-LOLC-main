@@ -1,0 +1,29 @@
+/* Universal selector *
+Type selector: elementname
+Class selector: .classname
+ID selector: #idname
+Attribute selector :[attr=value] */
+
+.lesson {
+width: 250px;
+height: 200px;
+}
+
+#section-1 {
+color: yellow;
+background-color: purple;
+
+}
+.section-blue {
+    color: orange;
+    background-color:blue ;
+}
+
+.container {
+    background-color: black;
+    color: white;
+}
+
+#section-6 {
+    color: yellow;
+}

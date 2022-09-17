@@ -1,0 +1,22 @@
+/* Universal selector: *
+Type selector: elementname
+Class selector: .classname
+ID selector: #idname
+Attribute selector:[attr=value] */
+
+.lesson {
+    background-color: #fffacd;
+    font-family:'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+
+}
+/* font weight refers to the the style of the font ie; Bold, itlaisized, etc */
+#fact-1 {
+    font-weight: bold;
+}
+#fact-2 {
+    font-size: 24px;
+}
+
+#fact-3 {
+    line-height: 50px;
+}
