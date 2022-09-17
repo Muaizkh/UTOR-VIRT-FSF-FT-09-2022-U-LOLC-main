@@ -87,6 +87,7 @@ for (var i = 0; i < numericselection; i++) {
 }
 console.log (sourcestring);
 console.log (password);
+
 return password;
 }
 
