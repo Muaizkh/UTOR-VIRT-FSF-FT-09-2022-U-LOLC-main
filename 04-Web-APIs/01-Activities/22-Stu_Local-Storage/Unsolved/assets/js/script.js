@@ -14,6 +14,9 @@ function displayMessage(type, message) {
 
 function renderLastRegistered() {
   // TODO: Retrieve the last email and password and render it to the page
+  // adds content to the local storage and gets the item to save successfully in the area that was coded for it
+  userPasswordSpan.textContent = localStorage.getItem("password");
+  userEmailSpan.textContent = localStorage.getItem("email");
 }
 
 signUpButton.addEventListener("click", function(event) {
@@ -31,4 +34,9 @@ signUpButton.addEventListener("click", function(event) {
 
   // TODO: Save email and password to localStorage and render the last registered user
   }
+  // recalls information that is already set as it is simply recalling the information from before 
+  localStorage.setItem("email", email);
+  localStorage.setItem("password", password);
+  // allows us to display information in the local storage
+  renderLastRegistered();
 });
