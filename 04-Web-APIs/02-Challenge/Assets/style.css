@@ -1,0 +1,53 @@
+/* Create the background color of entire sheet as well as font color and padding added to allow spacing and added different font style to bold title and fonts */
+* {
+    background-color: whitesmoke;
+    color:black;
+    padding: 15px;
+    box-sizing: border-box;
+    font-style: bolder;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* adding spacing to the children in the parent header along with padding */
+header {
+    justify-content: space-between;
+    padding:  15px;
+}
+/* adding font sizing and aligning it to center as per example in read me */
+h1 {
+    font-size: 35px;
+    text-align: center;
+}
+/* adding font sizing and aligning it to center as per example in read me */
+#starter {
+    text-align: center;
+    font-size: 15px;
+}
+/* changed how button responds along with adding coloring and padding around font and font size */
+.startbutton {
+    padding: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    background-image:radial-gradient(white,purple);
+}
+/* this allows for the highscore and time to be placed on the same row */
+.line {
+    display: flex;
+    flex-direction: row;
+}
+.title {
+    display: flex;
+    flex-direction: column;
+    /* align-content: center; this made the start button take the entire row. I needed to place align-items here to keep the button the size it is at */
+    align-items: center;
+}
+#q-answers {
+    cursor: pointer;
+    border: 2% black;
+    /* margin: 4px;
+    border-radius: 5px; */
+
+}
+#scores {
+    display: none;
+}

@@ -4,9 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz!</title>
+    <link rel="stylesheet" type="text/css" href="./style.css"/>
+    <title>Coding Quiz!</title>
 </head>
+
 <body>
+    <header class="line">
+        <!-- timer and highscore need to be situated at the top of the screen in each corner which is why I have placed them at the top of the HTML within their own container and will add CSS and JavaScript to them to allow them to update dynamically -->
+        <div> Highscores</div>
+        <p> Time: <span id="testTimer"></span></p>
+        <!-- as they will be seprate I have placed the highscor in a div and timer in a span  -->
+        <!-- <div> Highscores</div> commented out becuase I want time on the right and highscore on left and putting highscore on top of time allows that -->
+    </header>
+<!-- placed the title of the quiz along  -->
+        <main class="title">
+        <h1> Coding Quiz Challenge!</h1>
+        <!-- as this area will be updated dynamically with JavaScript added an id and class along with a description of what will happen -->
+        <div id="starter" class="title">
+            <p>Questions to test your knowledge and ability at HTML, CSS, JavaScript, and Web API's. All these questions are to test your ability in understanding rather than the element of practice. Try your best and good luck!</p>
+            <!-- button to being the enter script and create the Quiz atmopshere that will be displayed in the HTML -->
+            <button class="startbutton">Start</button>
+            </div>
+            <!-- created a new section that will house questions and answers and will add CSS and JavaScript to make them update dynamically. As the first page will not have to have questions on it I can leave it blank while still giving it a property for when it gets activated -->
+        <section id="questioner" class="title">
+                <h2 id="questions"></h2>
+                <!-- as answers are the only thing that are going to be in list format I will make an unordered list to allow a place for it to take place and then add JavaScript to update dynamically -->
+                <ul id="q-answers">
+                </ul>
+                <!-- need to add a place to put results into which will just display the fact of whether you have gotten the question correct or incorrect -->
+                <h3 id="answerResults"></h3>
+        </section>
+
+        <!-- section added to display score and high score along with id tags to reference in CSS and JavaScript -->
+        <section id="scores" class="title">
+            <div id="score">Score</div>
+            <div id="highscore">High Score</div>
+                
+        </section>
+
+    </main>
+<!-- added script after the HTML compnenets so that the script can reference the id's and classes already named and allow for easy access in the js file -->
     <script src="./script.js"></script>
 </body>
-</html>
+</html> 
