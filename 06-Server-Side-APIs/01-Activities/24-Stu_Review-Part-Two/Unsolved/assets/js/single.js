@@ -5,6 +5,7 @@ var limitWarningEl = document.querySelector('#limit-warning');
 var getRepoName = function () {
   // Where is this value coming from?
   // TODO: Write your answer here
+  // it comes from the querey search at the end of the url 
   var queryString = document.location.search;
   var repoName = queryString.split('=')[1];
 
@@ -15,6 +16,7 @@ var getRepoName = function () {
   } else {
     // Under what condition will this run?
     // TODO: Write your answer here
+    // its checks if there are any issues to diplay and if there are no issues it will replace it with the front page 
     document.location.replace('./index.html');
   }
 };
@@ -29,6 +31,7 @@ var getRepoIssues = function (repo) {
 
         // What is this checking for? Under what condition will this be `true`?
         // TODO: Write your answer here
+        // 
         if (response.headers.get('Link')) {
           displayWarning(repo);
         }
@@ -42,6 +45,7 @@ var getRepoIssues = function (repo) {
 var displayIssues = function (issues) {
   // Is there a difference between this and `!issues.length`?
   // TODO: Write your answer here
+  // it takes the string and splits it and returns an array that 
   if (issues.length === 0) {
     issueContainerEl.textContent = 'This repo has no open issues!';
     return;

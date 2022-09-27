@@ -21,11 +21,15 @@ var formSubmitHandler = function (event) {
 
 var buttonClickHandler = function (event) {
   // What is `event.target` referencing?
+  
   // TODO: Write your answer here
+  // event.target, gives you the element that triggered the event so in this case it would target the data-lanugage which is the value, which refers to the data on the HTML which would then cause the event and bring back the data
+
   var language = event.target.getAttribute('data-language');
 
   // Why is this `if` block in place?
   // TODO: Write your answer here
+  // this 'if' block is in place to make sure that data is displayed if it can retrieve the data or if that language is selected
   if (language) {
     getFeaturedRepos(language);
 
@@ -56,8 +60,9 @@ var getUserRepos = function (user) {
 var getFeaturedRepos = function (language) {
   // What are the query parameters doing here?
   // TODO: Write your answer here
+  // the query parameters in this case are first searching for and through the repositories then looking for that lanugage it is looking for the featured data-lanugages that we want to see and in this case it is HTML, CSS, and JavaScript
   var apiUrl = 'https://api.github.com/search/repositories?q=' + language + '+is:featured&sort=help-wanted-issues';
-
+// this fetchs the Url and 
   fetch(apiUrl).then(function (response) {
     if (response.ok) {
       response.json().then(function (data) {
@@ -74,6 +79,7 @@ var displayRepos = function (repos, searchTerm) {
     repoContainerEl.textContent = 'No repositories found.';
     // What would happen if there was no `return;` here?
     // TODO: Write your answer here
+    // if there is no return then an error message will come up
     return;
   }
 
@@ -82,6 +88,7 @@ var displayRepos = function (repos, searchTerm) {
   for (var i = 0; i < repos.length; i++) {
     // What is the result of this string concatenation?
     // TODO: Write your answer here
+    // the result is the name of the owner and then the name of the repo
     var repoName = repos[i].owner.login + '/' + repos[i].name;
 
     var repoEl = document.createElement('div');

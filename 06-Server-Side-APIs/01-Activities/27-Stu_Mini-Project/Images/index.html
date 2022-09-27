@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library of Congress Search Tool </title>
+</head>
+
+
+<body class="flex-column min-100-vh">
+    <header class="hero">
+        <h1 class="search-title"><i class="ser st-congress"></i> Library of Congress Search Tool</h1>
+    </header>
+
+    <main class="flex-row justtify-space-between">
+        <div class="col-12 col-md-4">
+        <div class="card">
+            <h3 class="card-header text-uppercase">Search!</h3>
+            <form id="user-form" class="card-body">
+                 <!-- add button for selecting a format  -->
+                 <label class="form-label" for="Search">Search</label>
+                 <input name="" id="Search" type="text" autofocus="true" class="form-input" />
+                 <button type= "submit" class="btn">Click Me</button>
+            </form>
+        </div>
+
+        <div class="col-12 col-md-8">
+            <h4 class="drop-down">Select a format<span id="format-serach"></span></h4> 
+            <select name="format" id="formats">
+            <option value="newspaper">newspaper</option>
+            <option value="manuscripts">manuscripts</option>
+            <option value="magazines">magazines</option>
+            <option value="articles">articles</option></select>
+
+        </div>
+
+        </div>
+    </main>
+    
+</body>
+</html>

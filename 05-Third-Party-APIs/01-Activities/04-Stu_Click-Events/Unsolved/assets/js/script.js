@@ -1,4 +1,5 @@
-var passwordBtnEl = $('.password-btn');
+// changed from looking for class to ID instead (. changed to #)
+var passwordBtnEl = $('#password-btn');
 var passwordDisplayEl = $('#password-display');
 
 // Returns a random character that includes alphanumeric and special character values
@@ -14,8 +15,9 @@ function passwordGenerator(num) {
   }
   return password;
 }
-
-passwordBtnEl.on('dblclick', function () {
+// Changed double click feature as read me wants to have a single click
+passwordBtnEl.on('click', function () {
   var newPassword = passwordGenerator(15);
+  console.log (newPassword);
   passwordDisplayEl.text(newPassword);
 });

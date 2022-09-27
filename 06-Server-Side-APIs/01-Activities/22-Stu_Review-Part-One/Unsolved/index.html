@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!-- Why does the `<link>` to `style.css` have to come last? -->
+  <!-- its last because it is going to need to add style to the fonts that were added  -->
   <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
   <link rel="stylesheet" href="./assets/css/style.css" />
@@ -16,6 +17,7 @@
   <header class="hero">
     <h1 class="app-title">
       <!-- TODO: What does this `<i>` element do? Where do these classes come from? -->
+        <!-- the i  tag is being used to indicate a technical term-->
       <i class="fab fa-github"></i> Git it Done!
     </h1>
     <p>Search for a GitHub user or click on a language to see a list of repositories and how many open issues they have!
@@ -39,6 +41,7 @@
         <h3 class="card-header text-uppercase">Search By Topic</h3>
         <div id="language-buttons" class="card-body">
           <!-- TODO: How are the `data-language` attributes being used? -->
+          <!-- the data-language attributes are being used to identify the type of data clicking that button will pull up ie. javascript opening javascript repos -->
           <button data-language="javascript" class="btn">JavaScript</button>
           <button data-language="html" class="btn">HTML</button>
           <button data-language="css" class="btn">CSS</button>
@@ -49,6 +52,7 @@
     <div class="col-12 col-md-8">
       <h2 class="subtitle">Showing Repositories for: <span id="repo-search-term"></span></h2>
       <!-- TODO: Why is this `<div>` empty? What goes in here? -->
+        <!-- the div tag is empty here due to the fact that it doesn't need to show anything until the item is searched and then it will be dynamically updated by the JavaScript/ append information into it-->
       <div id="repos-container" class="list-group"></div>
     </div>
   </main>
