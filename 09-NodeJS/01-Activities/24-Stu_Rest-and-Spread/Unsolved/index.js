@@ -2,9 +2,11 @@
 const songs = ['Creep', 'Everlong', 'Bulls On Parade', 'Song 2', 'What I Got'];
 
 // TODO: Which operator is being used here?
+// the operator that is being used here is the spread syntax
 const newSongs = [...songs];
 
 // TODO: What do you expect to be logged in the console?
+// we expect the to see the songs to be displayed and
 console.log(newSongs);
 
 // Exercise 2
