@@ -22,11 +22,15 @@ const isPrime = num => {
   return num !== 1;
 };
 
-
 // TODO: Describe how filter is working in this example. What will the value of primeArray be? 
+// the way filter is working in this example is that it is making sure to filter out the numbers that are even and then divisable by prime (1 or itself) excluding 1
+// the primeArray will be 3,2,5
 const primeArray = originalArray.filter(isPrime);
+console.log (primeArray);
 
 
 // TODO: Describe how filter is working in this example. What will the value of moreThan5Array be? 
+//  this filter is giving back any number that is larger than 5 and exlcuding all numbers 5 and under
+// the value of moreThan5Array is 10
 const moreThan5Array = originalArray.filter(num => num > 5);
-
+console.log (moreThan5Array);

@@ -63,13 +63,16 @@ var netflixQueue = {
     "Eternal Sunshine of the Spotless Mind",
     "Fight Club"
   ],
-  watchMovie: () => {
+  // changed the arrow syntax to function as im trying to call an object rather 
+  watchMovie: function(){
     this.queue.pop();
   },
-  addMovie: (movie) => {
+  // changed => to function as it can't return anything this way
+  addMovie: function(movie) {
     this.queue.unshift(movie);
   },
-  printQueue: () => {
+  // getting rid arrow syntax as we need a function to be able to read the objecy
+  printQueue: function() {
     var list = "";
     for (var i = this.queue.length - 1; i >= 0; i--) {
       var currentMovie = this.queue[i];
