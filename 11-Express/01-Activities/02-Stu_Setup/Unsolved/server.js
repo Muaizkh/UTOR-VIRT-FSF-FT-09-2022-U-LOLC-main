@@ -14,7 +14,7 @@ app.get('/send', (req, res) =>
 );
 
 // TODO: Create a route that will serve up the `public/paths.html` page
-app.get('/send', (req, res) =>
+app.get('/paths', (req, res) =>
 res.sendFile(path.join(__dirname, 'public/paths.html'))
 );
 app.listen(PORT, () =>
