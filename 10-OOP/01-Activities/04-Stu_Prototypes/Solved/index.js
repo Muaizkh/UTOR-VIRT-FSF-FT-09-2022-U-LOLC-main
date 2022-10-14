@@ -8,6 +8,7 @@ function Character(name, type, age, strength, hitpoints) {
 }
 
 // Associates the method printStats() to the Character constructor, which prints all of the stats for a character
+// \n creates a new line and the log is just to log all the things
 Character.prototype.printStats = function () {
   console.log(
     `Name: ${this.name}\nProfession: ${this.type}\nAge: ${this.age}\nStrength: ${this.strength}\nHitPoints: ${this.hitpoints}`
